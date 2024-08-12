@@ -2,6 +2,9 @@ body {
     background: white;
     font-family:fantasy;
 }
+a {
+    text-decoration: none;
+}
 
 .bg-indian-saffron {
     background: linear-gradient(to bottom, #FF9933 60%, hsla(30, 100%, 63%, 0) 100%);
@@ -47,11 +50,9 @@ main {
 }
 
 /* for carouasal */
-.carousel {
-    border-radius: 15px;
+.img-carousel {
     position: relative;
     overflow: hidden;
-
 }
 
 .carousel-images {
@@ -68,6 +69,12 @@ main {
 }
 
 /* for freedom fighter carousal card */
+.fighters-carousel {
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
 .image-container {
     display: flex;
     justify-content: center;
@@ -91,4 +98,15 @@ main {
     rgba(255, 255, 255, 0.06) 50%, 
     #138808 100%);
     backdrop-filter: blur(10px);
+}
+
+/* for form */
+.form-hidden {
+    display: none;
+}
+.form-show {
+    display: block;
+}
+.custom-button {
+    cursor: pointer;
 }

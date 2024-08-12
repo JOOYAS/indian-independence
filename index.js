@@ -174,3 +174,9 @@ freedomfightersData.forEach((fighter, index) => {
     `;
     carouselInner.appendChild(item);
 });
+
+//for form
+document.getElementById('register-button').addEventListener('click', function() {
+    const form = document.getElementById('register-form');
+    form.classList.toggle('form-show');
+});
