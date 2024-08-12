@@ -1,7 +1,8 @@
 body {
     background: white;
-    font-family:fantasy;
+    font-family: fantasy;
 }
+
 a {
     text-decoration: none;
 }
@@ -9,7 +10,6 @@ a {
 .bg-indian-saffron {
     background: linear-gradient(to bottom, #FF9933 60%, hsla(30, 100%, 63%, 0) 100%);
 }
-
 
 .bg-indian-green {
     background: linear-gradient(to bottom, hsla(123, 89%, 27%, 0) 0%, #138808 40%);
@@ -22,15 +22,16 @@ a {
                                 rgba(255, 255, 255, 0.06) 50%, 
                                 #138808 100%);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Safari */
     padding: 20px;
 }
 
 .blur-bg {
     background-color: rgba(255, 255, 255, 0.06);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Safari */
 }
 
-/* bg of main fixing to ashoka chakra */
 main {
     background-image: url('./public/Ashoka_Chakra.svg');
     background-size: cover;
@@ -39,6 +40,7 @@ main {
     background-position: center;
     background-attachment: fixed; /* Fixes the background image in place */
 }
+
 @media (min-width: 768px) {
     main {
         background-size: 20%;
@@ -49,7 +51,6 @@ main {
     min-height: 50vh;
 }
 
-/* for carouasal */
 .img-carousel {
     position: relative;
     overflow: hidden;
@@ -68,7 +69,6 @@ main {
     flex-shrink: 0;
 }
 
-/* for freedom fighter carousal card */
 .fighters-carousel {
     border-radius: 15px;
     position: relative;
@@ -90,6 +90,8 @@ main {
     object-fit: cover; 
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Safari */
+    -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Firefox */
 }
 
 .blurred-bg-card-data {
@@ -98,15 +100,17 @@ main {
     rgba(255, 255, 255, 0.06) 50%, 
     #138808 100%);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Safari */
 }
 
-/* for form */
 .form-hidden {
     display: none;
 }
+
 .form-show {
     display: block;
 }
+
 .custom-button {
     cursor: pointer;
 }
